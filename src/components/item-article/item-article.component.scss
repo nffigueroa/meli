@@ -1,0 +1,37 @@
+@import '../../variable.scss';
+.item-article {
+  display: flex;
+  border-bottom: 1px solid $white;
+  margin: 0 16px;
+  cursor: pointer;
+  &__img {
+    grid-area: "img";
+    height: 180px;
+    width: 180px;
+    margin: 16px;
+    margin-left: 0;
+  }
+  .center {
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    &__price {
+      font-size: 24px;
+      color: $black;
+      margin: 32px 0;
+      .icon {
+        margin-left: 5px;
+      }
+    }
+    &__description {
+      font-size: 18px;
+      max-width: 450px ;
+      color: $black;
+    }
+  }
+  &__location {
+    font-size: 12px;
+    color: $gray-secondary;
+    margin-top: 32px;
+  }
+}

@@ -1,0 +1,40 @@
+@import '../../variable.scss';
+
+.search-bar {
+  background-color: $yellow;
+  height: 50px;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  &__logo {
+    height: 35px;
+    width: 35px;
+    margin-right: 20px;
+    cursor: pointer;
+  }
+  .input-container {
+    display: flex;
+    position: relative;
+    width: 70%;
+    &__input {
+      width: 100%;
+      height: 25px;
+      border: 0.5px solid transparent;
+      font-size: $input-search-font-size-dktp;
+      padding-left: 10px;
+      &:focus {
+        outline: transparent;
+      }
+    }
+    &__lookup {
+      width: 30px;
+      height: 30px;
+      position: absolute;
+      right: 0;
+      background-color: $white;
+      cursor: pointer;
+    }
+  }
+}

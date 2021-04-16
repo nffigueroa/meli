@@ -1,0 +1,53 @@
+@import '../../variable.scss';
+
+.item-description {
+  background-color: white;
+  display: grid;
+  grid-template-areas: "img price" "description description";
+  padding: 0 40px;
+  &__img{
+    display: inline-block;
+    width: $image-descp-width;
+    max-width: $image-descp-width;
+    grid-area: img;
+  }
+  .price-container{
+    display: flex;
+    flex-direction: column;
+    grid-area: price;
+    margin: 0 32px auto auto;
+    &__label{
+      font-size: $price-label-font-size;
+      padding-top: 32px;
+      padding-bottom: 16px;
+    }
+    &__title{
+      font-size: $price-title-font-size;
+      padding-bottom: 32px;
+      font-weight: bold;
+      width: 200px;
+    }
+    &__price{
+      font-size: $price-value-font-size;
+      padding-bottom: 32px;
+    }
+    &__button{
+      background-color: $blue;
+      color: white;
+      height: 32px;
+      border: 0;
+      width: 220px;
+      border-radius: 4px;
+    }
+  }
+  .description-container{
+    grid-area: "description";
+    &__title{
+      font-size: $decription-title-font-size;
+    }
+    &__description{
+      font-size: $decription-text-font-size;
+      color: $gray;
+    }
+  }
+}
